@@ -393,11 +393,23 @@
 
 
 
+  #service-show {
+    --mask:
+    radial-gradient(59.17px at 50% 81px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(59.17px at 50% -51px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+    radial-gradient(59.17px at 50% calc(100% - 81px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(59.17px at 50% calc(100% + 51px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask); 
+          background-color: #fff;
+  
+  }
 
 
 .project-card:hover {
   transition: all 0.3s ease; /* انتقال سلس */
-  box-shadow: 0 10px 20px white, 0 -10px 20px white; /* ظل للأعلى والأسفل */
+  box-shadow: 0 10px 20px antiquewhite, 0 -10px 20px antiquewhite; /* ظل للأعلى والأسفل */
+  background-color: antiquewhite;
 }
 
 
@@ -419,9 +431,6 @@ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف للبطاقات */
 background-color: white;
 
 }
-
-
-
 
 
 
@@ -471,7 +480,7 @@ z-index: 1;
   radial-gradient(59.17px at 50% calc(100% + 51px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
 -webkit-mask: var(--mask);
         mask: var(--mask); 
-        background-color: #fff;
+        background-color: antiquewhite;
 
   }
 
@@ -686,6 +695,7 @@ z-index: 1;
         
       .project-card {
           margin-bottom: 30px;
+          height: 400px;
         }
 
         .social-icons .btn {
